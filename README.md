@@ -15,7 +15,7 @@
 要在本地運行此項目，請遵循以下步驟：
 
 1. 克隆倉庫到本地：
-git clone https://你的專案的GitHub倉庫URL.git
+git clone https://github.com/Wade0125Studio/Flask-Mouse-Position.git
 2. 進入專案目錄：
 cd 鼠標位置追蹤器
 3. 安裝依賴（確保你已安裝Python和pip）：
@@ -42,7 +42,7 @@ python app.py
 
 ## 聯繫方式
 
-如果你有任何問題或建議，請透過 [Issue](https://你的專案的GitHub倉庫URL/issues) 與我們聯繫。
+如果你有任何問題或建議，請透過 [Issue](https://github.com/Wade0125Studio/Flask-Mouse-Position/issues) 與我們聯繫。
 
 
 
@@ -63,13 +63,13 @@ This is a website built using the Flask framework to instantly track and display
 To run this project locally, follow these steps:
 
 1. Clone the repository locally:
-git clone https://your project’s GitHub repository URL.git
+git clone https://github.com/Wade0125Studio/Flask-Mouse-Position.git
 2. Enter the project directory:
 cd mouse position tracker
 3. Install dependencies (make sure you have Python and pip installed):
 pip install flask
 4. Run the Flask application:
-pythonapp.py
+python app.py
 
 
 
@@ -90,4 +90,4 @@ If you would like to contribute to this project, please send a pull request or o
 
 ## Contact information
 
-If you have any questions or suggestions, please contact us via [Issue](https://your project’s GitHub repository URL/issues).
+If you have any questions or suggestions, please contact us via [Issue](https://github.com/Wade0125Studio/Flask-Mouse-Position/issues).
