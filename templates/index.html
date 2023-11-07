@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">鼠標位置</title>
+    <link rel="icon" href="https://icons.iconarchive.com/icons/icons8/windows-8/512/Very-Basic-Cursor-icon.png" type="image/x-icon">
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background-color: #333; /* Dark background */
+            color: #fff; /* Light text */
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Prevent scroll bar */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        button, .button-like {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            transition: background-color 0.3s ease;
+            outline: none;
+            margin: 5px;
+            text-decoration: none; /* Remove underline from links */
+            display: inline-block; /* Allow width and height for anchor */
+        }
+        button:hover, .button-like:hover {
+            background-color: #0056b3;
+        }
+        #language-switch {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        #language-switch button {
+            padding: 5px 10px; /* Smaller padding for language switch */
+            font-size: 14px; /* Smaller font size for language switch */
+        }
+        h1, p {
+            margin: 10px 0;
+        }
+        #mousePosition {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ffd700;
+        }
+        #fullScreenStatus {
+            font-size: 18px;
+        }
+    </style>
+      <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</head>
+<body onload="toggleLanguage('zh')"> <!-- 页面加载时默认设置为中文 -->
+
+<div id="language-switch">
+    <button onclick="toggleLanguage('en')">English</button>
+    <button onclick="toggleLanguage('zh')">中文</button>
+</div>
+
+<div id="content">
+    <button onclick="toggleFullScreen()" id="fullscreen-button">切换全螢幕</button>
+    <h1 id="move-mouse">移動您的鼠標！</h1>
+    <p id="mousePosition">鼠標位置將在這顯示。</p>
+    <p id="fullScreenStatus">當前不是全螢幕</p>
+</div>
+
+<script>
+    const langTexts = {
+        'en': {
+            'title': 'Mouse Position',
+            'fullscreen-button': 'Toggle Full Screen',
+            'move-mouse': 'Move your mouse!',
+            'mousePosition': 'Mouse position will be displayed here.',
+            'fullScreenStatus': 'Not full screen'
+        },
+        'zh': {
+            'title': '鼠標位置',
+            'fullscreen-button': '切换全螢幕',
+            'move-mouse': '移動您的鼠標！',
+            'mousePosition': '鼠標位置將在這顯示。',
+            'fullScreenStatus': '當前不是全螢幕'
+        }
+    };
+
+    function toggleLanguage(lang) {
+        document.documentElement.lang = lang; // Set the lang attribute on the <html> tag
+        for (const id in langTexts[lang]) {
+            document.getElementById(id).textContent = langTexts[lang][id];
+        }
+    }
+</script>
+
+</body>
+</html>
