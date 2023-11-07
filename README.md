@@ -1,5 +1,7 @@
 # 鼠標位置追蹤器
-
+<div align="center">
+<img src="https://github.com/Wade0125Studio/Health-Insurance-Cross-Sell-Prediction-Using-CatBoost/blob/main/img/data1.png">
+</div>
 這是一個使用 Flask 框架建立的網站，用於即時追蹤和顯示鼠標在全螢幕模式下的位置。
 
 ## 功能
@@ -29,6 +31,9 @@ python app.py
 
 1. 開啟瀏覽器存取應用程式提供的位址（預設是 http://127.0.0.1:5000/）。
 2. 點選 'Toggle Full Screen' 按鈕以進入全螢幕模式。
+<div align="center">
+<img src="https://github.com/Wade0125Studio/Health-Insurance-Cross-Sell-Prediction-Using-CatBoost/blob/main/img/data1.png">
+</div>
 3. 移動鼠標以查看當前位置。
 4. 使用頁面頂部的按鈕切換語言。
 
@@ -47,6 +52,9 @@ python app.py
 
 
 # Mouse position tracker
+<div align="center">
+<img src="https://github.com/Wade0125Studio/Health-Insurance-Cross-Sell-Prediction-Using-CatBoost/blob/main/img/data1.png">
+</div>
 
 This is a website built using the Flask framework to instantly track and display the mouse position in full screen mode.
 
@@ -77,6 +85,9 @@ python app.py
 
 1. Open the browser and access the address provided by the application (the default is http://127.0.0.1:5000/).
 2. Click the 'Toggle Full Screen' button to enter full screen mode.
+<div align="center">
+<img src="https://github.com/Wade0125Studio/Health-Insurance-Cross-Sell-Prediction-Using-CatBoost/blob/main/img/data1.png">
+</div>
 3. Move the mouse to view the current location.
 4. Use the button at the top of the page to switch languages.
 
